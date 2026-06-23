@@ -5,7 +5,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Energy Tracker</title>
 <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><rect width='24' height='24' rx='4' fill='white'/><path fill='none' stroke='%23F97316' stroke-width='1.8' stroke-linecap='round' d='M12 4a8 8 0 1 0 7.4 5'/><path fill='%23F97316' d='M19 3.5l1.5 3.5-3.5-.5z'/><path fill='%23F97316' d='M11 17h-1l1-5.5H8a.75.75 0 0 1-.6-1.2l5.5-7 .6.5L10 13h3a.75.75 0 0 1 .6 1.2l-2.3 3.3L11 17z'/></svg>">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
 <style>
   :root {
     --bg: #ffffff;
@@ -52,6 +51,31 @@
       --border2: rgba(255,255,255,0.22);
     }
   }
+
+  /* Vendored Tabler Icons 2.47.0 subset: CSS masks keep the existing <i class="ti ti-*"> markup offline-safe. */
+  .ti { display: inline-block; width: 1em; height: 1em; line-height: 1; vertical-align: -0.125em; background-color: currentColor; flex-shrink: 0; -webkit-mask: var(--ti-icon) no-repeat center / contain; mask: var(--ti-icon) no-repeat center / contain; }
+  .ti-archive { --ti-icon: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2024%2024%22%20stroke-width%3D%222%22%20stroke%3D%22black%22%20fill%3D%22none%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%3Cpath%20stroke%3D%22none%22%20d%3D%22M0%200h24v24H0z%22%20fill%3D%22none%22%2F%3E%3Cpath%20d%3D%22M3%204m0%202a2%202%200%200%201%202%20-2h14a2%202%200%200%201%202%202v0a2%202%200%200%201%20-2%202h-14a2%202%200%200%201%20-2%20-2z%22%2F%3E%3Cpath%20d%3D%22M5%208v10a2%202%200%200%200%202%202h10a2%202%200%200%200%202%20-2v-10%22%2F%3E%3Cpath%20d%3D%22M10%2012l4%200%22%2F%3E%3C%2Fsvg%3E"); }
+  .ti-beach { --ti-icon: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2024%2024%22%20stroke-width%3D%222%22%20stroke%3D%22black%22%20fill%3D%22none%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%3Cpath%20stroke%3D%22none%22%20d%3D%22M0%200h24v24H0z%22%20fill%3D%22none%22%2F%3E%3Cpath%20d%3D%22M17.553%2016.75a7.5%207.5%200%200%200%20-10.606%200%22%2F%3E%3Cpath%20d%3D%22M18%203.804a6%206%200%200%200%20-8.196%202.196l10.392%206a6%206%200%200%200%20-2.196%20-8.196z%22%2F%3E%3Cpath%20d%3D%22M16.732%2010c1.658%20-2.87%202.225%20-5.644%201.268%20-6.196c-.957%20-.552%20-3.075%201.326%20-4.732%204.196%22%2F%3E%3Cpath%20d%3D%22M15%209l-3%205.196%22%2F%3E%3Cpath%20d%3D%22M3%2019.25a2.4%202.4%200%200%201%201%20-.25a2.4%202.4%200%200%201%202%201a2.4%202.4%200%200%200%202%201a2.4%202.4%200%200%200%202%20-1a2.4%202.4%200%200%201%202%20-1a2.4%202.4%200%200%201%202%201a2.4%202.4%200%200%200%202%201a2.4%202.4%200%200%200%202%20-1a2.4%202.4%200%200%201%202%20-1a2.4%202.4%200%200%201%201%20.25%22%2F%3E%3C%2Fsvg%3E"); }
+  .ti-bolt { --ti-icon: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2024%2024%22%20stroke-width%3D%222%22%20stroke%3D%22black%22%20fill%3D%22none%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%3Cpath%20stroke%3D%22none%22%20d%3D%22M0%200h24v24H0z%22%20fill%3D%22none%22%2F%3E%3Cpath%20d%3D%22M13%203l0%207l6%200l-8%2011l0%20-7l-6%200l8%20-11%22%2F%3E%3C%2Fsvg%3E"); }
+  .ti-brand-linkedin { --ti-icon: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2024%2024%22%20stroke-width%3D%222%22%20stroke%3D%22black%22%20fill%3D%22none%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%3Cpath%20stroke%3D%22none%22%20d%3D%22M0%200h24v24H0z%22%20fill%3D%22none%22%2F%3E%3Cpath%20d%3D%22M4%204m0%202a2%202%200%200%201%202%20-2h12a2%202%200%200%201%202%202v12a2%202%200%200%201%20-2%202h-12a2%202%200%200%201%20-2%20-2z%22%2F%3E%3Cpath%20d%3D%22M8%2011l0%205%22%2F%3E%3Cpath%20d%3D%22M8%208l0%20.01%22%2F%3E%3Cpath%20d%3D%22M12%2016l0%20-5%22%2F%3E%3Cpath%20d%3D%22M16%2016v-3a2%202%200%200%200%20-4%200%22%2F%3E%3C%2Fsvg%3E"); }
+  .ti-calendar-plus { --ti-icon: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2024%2024%22%20stroke-width%3D%222%22%20stroke%3D%22black%22%20fill%3D%22none%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%3Cpath%20stroke%3D%22none%22%20d%3D%22M0%200h24v24H0z%22%20fill%3D%22none%22%2F%3E%3Cpath%20d%3D%22M12.5%2021h-6.5a2%202%200%200%201%20-2%20-2v-12a2%202%200%200%201%202%20-2h12a2%202%200%200%201%202%202v5%22%2F%3E%3Cpath%20d%3D%22M16%203v4%22%2F%3E%3Cpath%20d%3D%22M8%203v4%22%2F%3E%3Cpath%20d%3D%22M4%2011h16%22%2F%3E%3Cpath%20d%3D%22M16%2019h6%22%2F%3E%3Cpath%20d%3D%22M19%2016v6%22%2F%3E%3C%2Fsvg%3E"); }
+  .ti-calendar-week { --ti-icon: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2024%2024%22%20stroke-width%3D%222%22%20stroke%3D%22black%22%20fill%3D%22none%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%3Cpath%20stroke%3D%22none%22%20d%3D%22M0%200h24v24H0z%22%20fill%3D%22none%22%2F%3E%3Cpath%20d%3D%22M4%207a2%202%200%200%201%202%20-2h12a2%202%200%200%201%202%202v12a2%202%200%200%201%20-2%202h-12a2%202%200%200%201%20-2%20-2v-12z%22%2F%3E%3Cpath%20d%3D%22M16%203v4%22%2F%3E%3Cpath%20d%3D%22M8%203v4%22%2F%3E%3Cpath%20d%3D%22M4%2011h16%22%2F%3E%3Cpath%20d%3D%22M8%2014v4%22%2F%3E%3Cpath%20d%3D%22M12%2014v4%22%2F%3E%3Cpath%20d%3D%22M16%2014v4%22%2F%3E%3C%2Fsvg%3E"); }
+  .ti-car { --ti-icon: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2024%2024%22%20stroke-width%3D%222%22%20stroke%3D%22black%22%20fill%3D%22none%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%3Cpath%20stroke%3D%22none%22%20d%3D%22M0%200h24v24H0z%22%20fill%3D%22none%22%2F%3E%3Cpath%20d%3D%22M7%2017m-2%200a2%202%200%201%200%204%200a2%202%200%201%200%20-4%200%22%2F%3E%3Cpath%20d%3D%22M17%2017m-2%200a2%202%200%201%200%204%200a2%202%200%201%200%20-4%200%22%2F%3E%3Cpath%20d%3D%22M5%2017h-2v-6l2%20-5h9l4%205h1a2%202%200%200%201%202%202v4h-2m-4%200h-6m-6%20-6h15m-6%200v-5%22%2F%3E%3C%2Fsvg%3E"); }
+  .ti-chart-bar { --ti-icon: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2024%2024%22%20stroke-width%3D%222%22%20stroke%3D%22black%22%20fill%3D%22none%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%3Cpath%20stroke%3D%22none%22%20d%3D%22M0%200h24v24H0z%22%20fill%3D%22none%22%2F%3E%3Cpath%20d%3D%22M3%2012m0%201a1%201%200%200%201%201%20-1h4a1%201%200%200%201%201%201v6a1%201%200%200%201%20-1%201h-4a1%201%200%200%201%20-1%20-1z%22%2F%3E%3Cpath%20d%3D%22M9%208m0%201a1%201%200%200%201%201%20-1h4a1%201%200%200%201%201%201v10a1%201%200%200%201%20-1%201h-4a1%201%200%200%201%20-1%20-1z%22%2F%3E%3Cpath%20d%3D%22M15%204m0%201a1%201%200%200%201%201%20-1h4a1%201%200%200%201%201%201v14a1%201%200%200%201%20-1%201h-4a1%201%200%200%201%20-1%20-1z%22%2F%3E%3Cpath%20d%3D%22M4%2020l14%200%22%2F%3E%3C%2Fsvg%3E"); }
+  .ti-check { --ti-icon: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2024%2024%22%20stroke-width%3D%222%22%20stroke%3D%22black%22%20fill%3D%22none%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%3Cpath%20stroke%3D%22none%22%20d%3D%22M0%200h24v24H0z%22%20fill%3D%22none%22%2F%3E%3Cpath%20d%3D%22M5%2012l5%205l10%20-10%22%2F%3E%3C%2Fsvg%3E"); }
+  .ti-checkbox { --ti-icon: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2024%2024%22%20stroke-width%3D%222%22%20stroke%3D%22black%22%20fill%3D%22none%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%3Cpath%20stroke%3D%22none%22%20d%3D%22M0%200h24v24H0z%22%20fill%3D%22none%22%2F%3E%3Cpath%20d%3D%22M9%2011l3%203l8%20-8%22%2F%3E%3Cpath%20d%3D%22M20%2012v6a2%202%200%200%201%20-2%202h-12a2%202%200%200%201%20-2%20-2v-12a2%202%200%200%201%202%20-2h9%22%2F%3E%3C%2Fsvg%3E"); }
+  .ti-chevron-down { --ti-icon: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2024%2024%22%20stroke-width%3D%222%22%20stroke%3D%22black%22%20fill%3D%22none%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%3Cpath%20stroke%3D%22none%22%20d%3D%22M0%200h24v24H0z%22%20fill%3D%22none%22%2F%3E%3Cpath%20d%3D%22M6%209l6%206l6%20-6%22%2F%3E%3C%2Fsvg%3E"); }
+  .ti-mail { --ti-icon: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2024%2024%22%20stroke-width%3D%222%22%20stroke%3D%22black%22%20fill%3D%22none%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%3Cpath%20stroke%3D%22none%22%20d%3D%22M0%200h24v24H0z%22%20fill%3D%22none%22%2F%3E%3Cpath%20d%3D%22M3%207a2%202%200%200%201%202%20-2h14a2%202%200%200%201%202%202v10a2%202%200%200%201%20-2%202h-14a2%202%200%200%201%20-2%20-2v-10z%22%2F%3E%3Cpath%20d%3D%22M3%207l9%206l9%20-6%22%2F%3E%3C%2Fsvg%3E"); }
+  .ti-moon { --ti-icon: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2024%2024%22%20stroke-width%3D%222%22%20stroke%3D%22black%22%20fill%3D%22none%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%3Cpath%20stroke%3D%22none%22%20d%3D%22M0%200h24v24H0z%22%20fill%3D%22none%22%2F%3E%3Cpath%20d%3D%22M12%203c.132%200%20.263%200%20.393%200a7.5%207.5%200%200%200%207.92%2012.446a9%209%200%201%201%20-8.313%20-12.454z%22%2F%3E%3C%2Fsvg%3E"); }
+  .ti-phone { --ti-icon: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2024%2024%22%20stroke-width%3D%222%22%20stroke%3D%22black%22%20fill%3D%22none%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%3Cpath%20stroke%3D%22none%22%20d%3D%22M0%200h24v24H0z%22%20fill%3D%22none%22%2F%3E%3Cpath%20d%3D%22M5%204h4l2%205l-2.5%201.5a11%2011%200%200%200%205%205l1.5%20-2.5l5%202v4a2%202%200%200%201%20-2%202a16%2016%200%200%201%20-15%20-15a2%202%200%200%201%202%20-2%22%2F%3E%3C%2Fsvg%3E"); }
+  .ti-search { --ti-icon: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2024%2024%22%20stroke-width%3D%222%22%20stroke%3D%22black%22%20fill%3D%22none%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%3Cpath%20stroke%3D%22none%22%20d%3D%22M0%200h24v24H0z%22%20fill%3D%22none%22%2F%3E%3Cpath%20d%3D%22M10%2010m-7%200a7%207%200%201%200%2014%200a7%207%200%201%200%20-14%200%22%2F%3E%3Cpath%20d%3D%22M21%2021l-6%20-6%22%2F%3E%3C%2Fsvg%3E"); }
+  .ti-shield-check { --ti-icon: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2024%2024%22%20stroke-width%3D%222%22%20stroke%3D%22black%22%20fill%3D%22none%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%3Cpath%20stroke%3D%22none%22%20d%3D%22M0%200h24v24H0z%22%20fill%3D%22none%22%2F%3E%3Cpath%20d%3D%22M11.46%2020.846a12%2012%200%200%201%20-7.96%20-14.846a12%2012%200%200%200%208.5%20-3a12%2012%200%200%200%208.5%203a12%2012%200%200%201%20-.09%207.06%22%2F%3E%3Cpath%20d%3D%22M15%2019l2%202l4%20-4%22%2F%3E%3C%2Fsvg%3E"); }
+  .ti-shopping-cart { --ti-icon: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2024%2024%22%20stroke-width%3D%222%22%20stroke%3D%22black%22%20fill%3D%22none%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%3Cpath%20stroke%3D%22none%22%20d%3D%22M0%200h24v24H0z%22%20fill%3D%22none%22%2F%3E%3Cpath%20d%3D%22M6%2019m-2%200a2%202%200%201%200%204%200a2%202%200%201%200%20-4%200%22%2F%3E%3Cpath%20d%3D%22M17%2019m-2%200a2%202%200%201%200%204%200a2%202%200%201%200%20-4%200%22%2F%3E%3Cpath%20d%3D%22M17%2017h-11v-14h-2%22%2F%3E%3Cpath%20d%3D%22M6%205l14%201l-1%207h-13%22%2F%3E%3C%2Fsvg%3E"); }
+  .ti-sun { --ti-icon: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2024%2024%22%20stroke-width%3D%222%22%20stroke%3D%22black%22%20fill%3D%22none%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%3Cpath%20stroke%3D%22none%22%20d%3D%22M0%200h24v24H0z%22%20fill%3D%22none%22%2F%3E%3Cpath%20d%3D%22M12%2012m-4%200a4%204%200%201%200%208%200a4%204%200%201%200%20-8%200%22%2F%3E%3Cpath%20d%3D%22M3%2012h1m8%20-9v1m8%208h1m-9%208v1m-6.4%20-15.4l.7%20.7m12.1%20-.7l-.7%20.7m0%2011.4l.7%20.7m-12.1%20-.7l-.7%20.7%22%2F%3E%3C%2Fsvg%3E"); }
+  .ti-trash { --ti-icon: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2024%2024%22%20stroke-width%3D%222%22%20stroke%3D%22black%22%20fill%3D%22none%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%3Cpath%20stroke%3D%22none%22%20d%3D%22M0%200h24v24H0z%22%20fill%3D%22none%22%2F%3E%3Cpath%20d%3D%22M4%207l16%200%22%2F%3E%3Cpath%20d%3D%22M10%2011l0%206%22%2F%3E%3Cpath%20d%3D%22M14%2011l0%206%22%2F%3E%3Cpath%20d%3D%22M5%207l1%2012a2%202%200%200%200%202%202h8a2%202%200%200%200%202%20-2l1%20-12%22%2F%3E%3Cpath%20d%3D%22M9%207v-3a1%201%200%200%201%201%20-1h4a1%201%200%200%201%201%201v3%22%2F%3E%3C%2Fsvg%3E"); }
+  .ti-user { --ti-icon: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2024%2024%22%20stroke-width%3D%222%22%20stroke%3D%22black%22%20fill%3D%22none%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%3Cpath%20stroke%3D%22none%22%20d%3D%22M0%200h24v24H0z%22%20fill%3D%22none%22%2F%3E%3Cpath%20d%3D%22M8%207a4%204%200%201%200%208%200a4%204%200%200%200%20-8%200%22%2F%3E%3Cpath%20d%3D%22M6%2021v-2a4%204%200%200%201%204%20-4h4a4%204%200%200%201%204%204v2%22%2F%3E%3C%2Fsvg%3E"); }
+  .ti-user-check { --ti-icon: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2024%2024%22%20stroke-width%3D%222%22%20stroke%3D%22black%22%20fill%3D%22none%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%3Cpath%20stroke%3D%22none%22%20d%3D%22M0%200h24v24H0z%22%20fill%3D%22none%22%2F%3E%3Cpath%20d%3D%22M8%207a4%204%200%201%200%208%200a4%204%200%200%200%20-8%200%22%2F%3E%3Cpath%20d%3D%22M6%2021v-2a4%204%200%200%201%204%20-4h4%22%2F%3E%3Cpath%20d%3D%22M15%2019l2%202l4%20-4%22%2F%3E%3C%2Fsvg%3E"); }
+  .ti-x { --ti-icon: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2024%2024%22%20stroke-width%3D%222%22%20stroke%3D%22black%22%20fill%3D%22none%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%3Cpath%20stroke%3D%22none%22%20d%3D%22M0%200h24v24H0z%22%20fill%3D%22none%22%2F%3E%3Cpath%20d%3D%22M18%206l-12%2012%22%2F%3E%3Cpath%20d%3D%22M6%206l12%2012%22%2F%3E%3C%2Fsvg%3E"); }
 
   * { box-sizing: border-box; margin: 0; padding: 0; }
   body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: var(--bg3); color: var(--text); font-size: 15px; min-height: 100vh; }
@@ -799,7 +823,15 @@ const html = (strs, ...vals) => strs.reduce((out, s, i) =>
 // ── Build stamp ───────────────────────────────────────────
 // Plain editable date string — no build step in a single-file app. AGENTS.md instructs
 // bumping it on every change. Surfaced in bug reports and the ?debug panel.
-const BUILD = '2026-06-22';   // bump on every change; stamped into every bug report
+const BUILD = '2026-06-23-2';   // bump on every change; stamped into every bug report
+
+const VENDORED_TABLER_ICONS = [
+  'ti-archive', 'ti-beach', 'ti-bolt', 'ti-brand-linkedin', 'ti-calendar-plus',
+  'ti-calendar-week', 'ti-car', 'ti-chart-bar', 'ti-check', 'ti-checkbox',
+  'ti-chevron-down', 'ti-mail', 'ti-moon', 'ti-phone', 'ti-search',
+  'ti-shield-check', 'ti-shopping-cart', 'ti-sun', 'ti-trash', 'ti-user',
+  'ti-user-check', 'ti-x',
+];
 
 // ── State ─────────────────────────────────────────────────
 let offClock = localStorage.getItem('offClock') === 'true';
@@ -939,36 +971,52 @@ function saveScriptUrl() {
 }
 
 // ── Data helpers ──────────────────────────────────────────
-function normalize(r) {
-  const cat = String(r.cat || '3').trim();
-  const added = (r.added || '');
-  const addedClean = /\d{4}-\d{2}-\d{2}/.test(added) ? added.slice(0,10) : '';
-  return {
-    id:       Number(r.id),
-    name:     r.name  || '',
-    cat:      ['1','2','3','4'].includes(cat) ? cat : '3',
-    tag:      r.tag   || 'work',
-    note:     r.note  || '',
-    cleared:  r.cleared === true || String(r.cleared).toUpperCase() === 'TRUE',
-    added:    addedClean,
-    pri:      String(r.pri != null && r.pri !== '' ? r.pri : '2'),
-    deadline: /\d{4}-\d{2}-\d{2}/.test(r.deadline || '') ? r.deadline.slice(0,10) : '',
-    starred:  r.starred  === true || String(r.starred).toUpperCase()  === 'TRUE',
-    archived:   r.archived  === true || String(r.archived).toUpperCase()  === 'TRUE',
-    archivedAt: r.archivedAt || '',
-    subtasks: (() => { try { const v = r.subtasks; if (!v || v === '' || v === '0' || v === 0) return []; if (Array.isArray(v)) return v; const p = JSON.parse(v); return Array.isArray(p) ? p : []; } catch(e) { return []; } })(),
-    estimate: r.estimate ? Number(r.estimate) : 0,
-    remission:    r.remission    === true || String(r.remission).toUpperCase()    === 'TRUE',
-    snoozedUntil: /\d{4}-\d{2}-\d{2}/.test(r.snoozedUntil || '') ? r.snoozedUntil.slice(0,10) : '',
-    revenue:      r.revenue      === true || String(r.revenue).toUpperCase()      === 'TRUE',
-    delegated:    r.delegated    === true || String(r.delegated).toUpperCase()    === 'TRUE',
-    delegatedTo:  r.delegatedTo  || '',
-    delegationExpiry: /\d{4}-\d{2}-\d{2}/.test(r.delegationExpiry || '') ? String(r.delegationExpiry).slice(0,10) : '',
-    recurring:     r.recurring     || '',
-    lastCompleted: r.lastCompleted ? String(r.lastCompleted).slice(0,10) : '',
-    nextRecurAt:   r.nextRecurAt   || '',
-  };
-}
+
+// ── Field schema registry ─────────────────────────────────
+// One ordered list per entity = the SINGLE source for both load-normalization and
+// new-object defaults. Add a field here (name + coercer) and normalize*() + the add
+// path pick it up automatically. Coercers reproduce the exact legacy coercion.
+const C = {
+  id:    v => Number(v),
+  str:   v => v || '',
+  strD:  d => v => v || d,
+  strW:  d => v => String(v || d),
+  bool:  v => v === true || String(v).toUpperCase() === 'TRUE',
+  num:   d => v => v ? Number(v) : d,
+  estimate: d => v => (v === undefined || v === null || v === '') ? d : Number(v),
+  date:  v => /\d{4}-\d{2}-\d{2}/.test(v || '') ? String(v).slice(0,10) : '',  // strict (item)
+  date10: v => (v || '').slice(0,10),                                          // loose (outreach/errand `added`)
+  slice10: v => v ? String(v).slice(0,10) : '',                               // item lastCompleted
+  pri:   v => String(v != null && v !== '' ? v : '2'),
+  catItem: v => { const c = String(v || '3').trim(); return ['1','2','3','4'].includes(c) ? c : '3'; },
+  subtasks: v => { try { if (!v || v === '' || v === '0' || v === 0) return []; if (Array.isArray(v)) return v; const p = JSON.parse(v); return Array.isArray(p) ? p : []; } catch(e) { return []; } },
+};
+
+const ITEM_FIELDS = [
+  ['id', C.id], ['name', C.str], ['cat', C.catItem], ['tag', C.strD('work')],
+  ['note', C.str], ['cleared', C.bool], ['added', C.date], ['pri', C.pri],
+  ['deadline', C.date], ['starred', C.bool], ['archived', C.bool], ['archivedAt', C.str],
+  ['subtasks', C.subtasks], ['estimate', C.estimate(30)],  /* drift fix: was 0 on load, 30 on add → 30 */
+  ['remission', C.bool], ['snoozedUntil', C.date], ['revenue', C.bool],
+  ['delegated', C.bool], ['delegatedTo', C.str], ['delegationExpiry', C.date],
+  ['recurring', C.str], ['lastCompleted', C.slice10], ['nextRecurAt', C.str],
+];
+const OUTREACH_FIELDS = [
+  ['id', C.id], ['name', C.str], ['type', C.strD('call')], ['cat', C.strW('3')],
+  ['pri', C.pri], ['starred', C.bool], ['done', C.bool], ['archived', C.bool],
+  ['archivedAt', C.str], ['added', C.date10], ['lastPinged', C.str],
+  ['snoozedUntil', C.date], ['revenue', C.bool],
+];
+const ERRAND_FIELDS = [
+  ['id', C.id], ['name', C.str], ['pri', C.pri], ['starred', C.bool], ['done', C.bool],
+  ['archived', C.bool], ['archivedAt', C.str], ['added', C.date10],
+  ['type', C.strD('errand')], ['note', C.str],
+];
+
+function fromSchema(fields, r)  { const o = {}; for (const [k, c] of fields) o[k] = c(r ? r[k] : undefined); return o; }
+function blankFromSchema(fields){ return fromSchema(fields, {}); }   // every field at its default
+
+function normalize(r) { return fromSchema(ITEM_FIELDS, r); }
 
 function setSyncStatus(msg, cls) {
   const el = document.getElementById('sync-status');
@@ -1187,30 +1235,14 @@ async function addItem() {
   const name = document.getElementById('f-name').value.trim();
   if (!name) return;
   const id = Date.now();
-  const item = {
+  const item = { ...blankFromSchema(ITEM_FIELDS),
     id, name,
-    cat:      document.getElementById('f-cat').value,
-    tag:      document.getElementById('f-tag').value,
-    note:     '',
-    cleared:  false,
-    added:    new Date().toISOString().slice(0,10),
-    pri:      document.getElementById('f-pri').value,
-    deadline: '',
-    starred:   addStarred,
-    archived:   false,
-    archivedAt: '',
-    subtasks:  [],
-    estimate:     30,
-    remission:    false,
-    snoozedUntil:     '',
-    revenue:          addRevenue,
-    delegated:        false,
-    delegatedTo:      '',
-    delegationExpiry: '',
-    recurring:        '',
-    lastCompleted:    '',
-    nextRecurAt:      '',
-  };
+    cat:    document.getElementById('f-cat').value,
+    tag:    document.getElementById('f-tag').value,
+    pri:    document.getElementById('f-pri').value,
+    added:  new Date().toISOString().slice(0,10),
+    starred: addStarred, revenue: addRevenue,
+  };   // estimate:30, subtasks:[], all flags false, etc. come from the blank
   document.getElementById('f-name').value = '';
   addStarred = false;
   addRevenue = false;
@@ -2086,23 +2118,7 @@ const O_CAT_DOT   = { '1':'e1','2':'e2','3':'e3','4':'e4' };
 const O_CAT_ACC   = { '1':'acc-risk','2':'acc-enrg','3':'acc-neut','4':'acc-drai' };
 const O_PRI_BADGE = { '0':{ badge:'!!', cls:'pri-top' }, '1':{ badge:'!', cls:'pri-high' }, '2':{ badge:'', cls:'' }, '3':{ badge:'↓', cls:'pri-low' } };
 
-function normalizeOutreach(r) {
-  return {
-    id:       Number(r.id),
-    name:     r.name || '',
-    type:     r.type || 'call',
-    cat:      String(r.cat || '3'),
-    pri:      String(r.pri != null && r.pri !== '' ? r.pri : '2'),
-    starred:  r.starred === true || String(r.starred).toUpperCase() === 'TRUE',
-    done:     r.done === true || String(r.done).toUpperCase() === 'TRUE',
-    archived:   r.archived  === true || String(r.archived).toUpperCase()  === 'TRUE',
-    archivedAt: r.archivedAt || '',
-    added:    (r.added || '').slice(0,10),
-    lastPinged:   r.lastPinged   || '',
-    snoozedUntil: /\d{4}-\d{2}-\d{2}/.test(r.snoozedUntil || '') ? r.snoozedUntil.slice(0,10) : '',
-    revenue:      r.revenue === true || String(r.revenue).toUpperCase() === 'TRUE',
-  };
-}
+function normalizeOutreach(r) { return fromSchema(OUTREACH_FIELDS, r); }
 
 async function loadOutreach() {
   if (!scriptUrl) return;
@@ -2167,8 +2183,11 @@ async function addOutreach() {
   const addBtn = document.querySelector('.outreach-add button');
   if (addBtn) { addBtn.disabled = true; addBtn.textContent = 'Adding…'; }
   for (const name of names) {
-    const item = { id: Date.now() + Math.random(), name, type, cat:'3', pri:'2', starred:outreachAddStarred, done:false, archived:false, added: new Date().toISOString().slice(0,10) };
-    item.id = Math.floor(item.id);
+    // now ships lastPinged/snoozedUntil/revenue (drift fix) via the registry blank
+    const item = { ...blankFromSchema(OUTREACH_FIELDS),
+      id: Math.floor(Date.now() + Math.random()), name, type,
+      starred: outreachAddStarred, added: new Date().toISOString().slice(0,10),
+    };
     await commitAdd('outreach', item, { render: false });   // render once after the loop
   }
   document.getElementById('o-name').value = '';
@@ -2752,20 +2771,7 @@ async function cycleErrandType(id, e) {
 }
 let errandsCollapsed = false;
 
-function normalizeErrand(r) {
-  return {
-    id:       Number(r.id),
-    name:     r.name || '',
-    pri:      String(r.pri != null && r.pri !== '' ? r.pri : '2'),
-    starred:  r.starred === true || String(r.starred).toUpperCase() === 'TRUE',
-    done:     r.done    === true || String(r.done).toUpperCase()    === 'TRUE',
-    archived:   r.archived  === true || String(r.archived).toUpperCase()  === 'TRUE',
-    archivedAt: r.archivedAt || '',
-    added:    (r.added || '').slice(0,10),
-    type:     r.type || 'errand',
-    note:     r.note || '',
-  };
-}
+function normalizeErrand(r) { return fromSchema(ERRAND_FIELDS, r); }
 
 async function loadErrands() {
   if (!scriptUrl) return;
@@ -2807,7 +2813,10 @@ async function addErrands() {
   const names = raw.split(/[,\u000a]+/).map(s => s.trim()).filter(Boolean);
   for (const name of names) {
     const etype = document.getElementById('e-type') ? document.getElementById('e-type').value : 'errand';
-    const item = { id: Math.floor(Date.now() + Math.random()*1000), name, pri:'2', starred:false, done:false, archived:false, added: new Date().toISOString().slice(0,10), type: etype, note: '' };
+    const item = { ...blankFromSchema(ERRAND_FIELDS),
+      id: Math.floor(Date.now() + Math.random()*1000), name, type: etype,
+      added: new Date().toISOString().slice(0,10),
+    };
     await commitAdd('errand', item, { render: false });   // render once after the loop
   }
   document.getElementById('e-name').value = '';
@@ -3397,6 +3406,90 @@ async function runSelfTest() {
       if (cacheSnap3[k] === null) localStorage.removeItem(k);
       else localStorage.setItem(k, cacheSnap3[k]);
     }
+  }
+
+  // ── Sync probe: prove the field-schema registry is the single source of truth ──
+  // The registry functions (normalize*/fromSchema/blankFromSchema) are PURE — no fetch,
+  // render, or localStorage — so this needs no snapshot/stub/restore. It must not (and
+  // does not) mutate any global. Guards the field-list ↔ output drift this chunk killed.
+  try {
+    const eq = (a, b) => JSON.stringify(a) === JSON.stringify(b);
+
+    // Completeness: normalize output keys (and order) exactly match the registry field list.
+    assert('ITEM registry ↔ normalize keys match',
+      eq(Object.keys(normalize({})), ITEM_FIELDS.map(f => f[0])));
+    assert('OUTREACH registry ↔ normalizeOutreach keys match',
+      eq(Object.keys(normalizeOutreach({})), OUTREACH_FIELDS.map(f => f[0])));
+    assert('ERRAND registry ↔ normalizeErrand keys match',
+      eq(Object.keys(normalizeErrand({})), ERRAND_FIELDS.map(f => f[0])));
+
+    // Blank completeness: a new item can't silently omit a field. Every registry key is
+    // present and defined — the sole NaN is id (no row id yet on a blank).
+    const ib = blankFromSchema(ITEM_FIELDS);
+    assert('item blank has every registry key',
+      eq(Object.keys(ib), ITEM_FIELDS.map(f => f[0])));
+    assert('item blank has no undefined (id is NaN, not undefined)',
+      Number.isNaN(ib.id) && Object.entries(ib).every(([k, v]) => k === 'id' || v !== undefined));
+
+    // Round-trip fidelity: representative coercions, covering the drift fields.
+    assert('normalize coerces estimate string → number', normalize({ estimate: '45' }).estimate === 45);
+    assert('normalize preserves explicit estimate 0', normalize({ estimate: 0 }).estimate === 0);
+    assert('normalize preserves explicit estimate string 0', normalize({ estimate: '0' }).estimate === 0);
+    assert('normalize clamps out-of-range cat → 3', normalize({ cat: '9' }).cat === '3');
+    assert('normalize coerces TRUE string → bool', normalize({ starred: 'TRUE' }).starred === true);
+    assert('normalizeOutreach coerces revenue TRUE → bool', normalizeOutreach({ revenue: 'TRUE' }).revenue === true);
+    assert('normalizeOutreach coerces numeric cat 2 → string', normalizeOutreach({ cat: 2 }).cat === '2');
+    assert('normalizeOutreach coerces numeric cat 1 → string', normalizeOutreach({ cat: 1 }).cat === '1');
+    assert('normalizeErrand defaults type → errand', normalizeErrand({}).type === 'errand');
+
+    // Idempotency: coercers are stable, so a second pass changes nothing.
+    const si = normalize({ id: 7, name: 'x', cat: '2', estimate: '45', starred: 'TRUE', subtasks: '[]' });
+    assert('normalize is idempotent', eq(normalize(si), si));
+    const so = normalizeOutreach({ id: 8, name: 'y', revenue: 'TRUE', added: '2026-06-22T09:00' });
+    assert('normalizeOutreach is idempotent', eq(normalizeOutreach(so), so));
+
+    // Drift-fix proof: item estimate now defaults to 30 (was 0 on load); a fresh outreach
+    // object now ships the previously-omitted lastPinged/snoozedUntil/revenue fields.
+    assert('drift fix: item blank estimate defaults to 30', ib.estimate === 30);
+    const ob = blankFromSchema(OUTREACH_FIELDS);
+    assert('outreach blank has every registry key',
+      eq(Object.keys(ob), OUTREACH_FIELDS.map(f => f[0])));
+    assert('outreach blank has no undefined (id is NaN, not undefined)',
+      Number.isNaN(ob.id) && Object.entries(ob).every(([k, v]) => k === 'id' || v !== undefined));
+    const eb = blankFromSchema(ERRAND_FIELDS);
+    assert('errand blank has every registry key',
+      eq(Object.keys(eb), ERRAND_FIELDS.map(f => f[0])));
+    assert('errand blank has no undefined (id is NaN, not undefined)',
+      Number.isNaN(eb.id) && Object.entries(eb).every(([k, v]) => k === 'id' || v !== undefined));
+    assert('drift fix: outreach blank ships lastPinged/snoozedUntil/revenue',
+      'lastPinged' in ob && 'snoozedUntil' in ob && 'revenue' in ob);
+  } catch (e) {
+    assert('registry probe ran without uncaught error: ' + (e && e.message), false);
+  }
+
+
+  // ── Offline icon probe: the Tabler subset is vendored, not loaded from a CDN ──
+  try {
+    const vendoredRules = new Set();
+    for (const sheet of Array.from(document.styleSheets)) {
+      let rules;
+      try { rules = sheet.cssRules; } catch (_) { continue; }
+      for (const rule of Array.from(rules || [])) {
+        const selector = rule.selectorText || '';
+        const m = selector.match(/^\.ti-[-\w]+$/);
+        if (m && (rule.style.getPropertyValue('--ti-icon') || '').indexOf('data:image/svg+xml') !== -1) {
+          vendoredRules.add(selector.slice(1));
+        }
+      }
+    }
+    assert('vendored Tabler uses no external stylesheet link',
+      !document.querySelector('link[href*="tabler/icons"], link[href*="tabler-icons"]'));
+    assert('vendored Tabler CSS covers every declared icon',
+      VENDORED_TABLER_ICONS.every(c => vendoredRules.has(c)));
+    assert('vendored Tabler covers dynamic theme/clock icons',
+      ['ti-sun', 'ti-moon', 'ti-calendar-week', 'ti-beach'].every(c => vendoredRules.has(c)));
+  } catch (e) {
+    assert('vendored Tabler probe ran without uncaught error: ' + (e && e.message), false);
   }
 
   const passed = results.filter(r => r.pass).length;
